@@ -110,9 +110,5 @@ Watch our project demo: [YouTube Demo](https://youtu.be/m5LqG1EF68Q)
 - Advanced analytics for learning progress tracking
 - Integration with virtual classroom tools
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 Developed with ❤️ during wHACKiest'24 by Team DYNAMO
