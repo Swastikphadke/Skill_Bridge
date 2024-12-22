@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            background-color: #E0F7FA; /* Light cool background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff; /* White background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #00796B; /* Cool green */
+        }
+        label {
+            font-size: 14px;
+            color: #00796B;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #00796B;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #00796B;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+        
+            <label for="expertise">Expertise:</label>
+            <input type="text" id="expertise" name="expertise" required><br>
+        
+            <label for="skill_level">Skill Level:</label>
+            <input type="text" id="skill_level" name="skill_level" required><br>
+        
+            <label for="available_time">Available Time:</label>
+            <input type="text" id="available_time" name="available_time" required><br>
+        
+            <label for="teaching_mode">Teaching Mode:</label>
+            <select id="teaching_mode" name="teaching_mode" required>
+                <option value="Virtual">Virtual</option>
+                <option value="Hands-on">Hands-on</option>
+            </select><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <button type="submit">Sign Up</button>
+        </form>
+        
+    </div>
+</body>
+</html>
+
