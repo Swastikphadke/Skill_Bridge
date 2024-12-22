@@ -1,0 +1,35 @@
+<!-- mentor_matching/templates/mentor_matching/mentor_profile.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ mentor.name }}'s Profile</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>{{ mentor.name }}'s Profile</h1>
+        <nav>
+            <a href="{% url 'tutor:mentor_list' %}">Back to Mentor List</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About {{ mentor.name }}</h2>
+            <p><strong>Expertise:</strong> {{ mentor.expertise }}</p>
+            <p><strong>Skill level:</strong> {{ mentor.skill_level }}</p>
+            <p><strong>Availability:</strong> {{ mentor.available_time }}</p>
+            <p><strong>Teaching Mode:</strong> {{ mentor.teaching_mode }}</p>
+            <p><strong>Email:</strong> {{ mentor.email }}</p>
+
+            <p>{{ mentor.bio }}</p> <!-- Assuming the Mentor model has a bio field -->
+        </section>
+    </main>
+
+</body>
+</html>
