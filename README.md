@@ -82,18 +82,7 @@ python manage.py runserver
 ```
 
 5. Visit `http://localhost:8000` in your browser
-
-## 👥 Team DYNAMO
-
-- Swastik R Phadke (1MS24CI139-T)
-- Harsh Tiwari (1MS24CI015-T)
-- Supriya J (1MS24CI006-T)
-- Nysa Lakhotia (1MS24CI102-T)
-
-## 🎥 Demo
-
-Watch our project demo: [YouTube Demo](https://youtu.be/m5LqG1EF68Q)
-
+   
 ## 💪 Project Impact
 
 - Provides vital connections between students seeking academic help and those willing to share knowledge
